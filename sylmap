@@ -1,30 +1,177 @@
-<!DOCTYPE HTML>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Sylv_area.html</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9d14addf281e4fff96d30a9adb29ff28 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
 </head>
-
-<body>
-  <style type="text/css">
-    html, body, #container {
-      height: 100%;
-    }
-    body, #container {
-      overflow: hidden;
-      margin: 0;
-    }
-    #iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
-  <div id="container">
-    <iframe id="iframe" sandbox="allow-scripts" src="/user/1326795/files/work/Sylv_area.html"></iframe>
-  </div>
+<body>    
+    
+            <div class="folium-map" id="map_9d14addf281e4fff96d30a9adb29ff28" ></div>
+        
 </body>
+<script>    
+    
+            var map_9d14addf281e4fff96d30a9adb29ff28 = L.map(
+                "map_9d14addf281e4fff96d30a9adb29ff28",
+                {
+                    center: [52.4624, -1.7989],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
 
-</html>
+            
+
+        
+    
+            var tile_layer_4accad6830354aeca5f482044bc2357d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9d14addf281e4fff96d30a9adb29ff28);
+        
+    
+            var marker_913a4f4a382c41ecb4666fd38a85f9d3 = L.marker(
+                [52.4607, -1.803],
+                {}
+            ).addTo(map_9d14addf281e4fff96d30a9adb29ff28);
+        
+    
+        var popup_2b515851cb0f4fc387d10a5eac973495 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70a6bb41245e4ca9aa9cb1702f0565b0 = $(`<div id="html_70a6bb41245e4ca9aa9cb1702f0565b0" style="width: 100.0%; height: 100.0%;">Bus_stop</div>`)[0];
+            popup_2b515851cb0f4fc387d10a5eac973495.setContent(html_70a6bb41245e4ca9aa9cb1702f0565b0);
+        
+
+        marker_913a4f4a382c41ecb4666fd38a85f9d3.bindPopup(popup_2b515851cb0f4fc387d10a5eac973495)
+        ;
+
+        
+    
+    
+            var marker_b57b40891a974b94893b8feced5e4128 = L.marker(
+                [52.4564, -1.783],
+                {}
+            ).addTo(map_9d14addf281e4fff96d30a9adb29ff28);
+        
+    
+        var popup_c29684491492472aaf84fac363455c3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5a2d312fa4a438bbca6ee182dee7bba = $(`<div id="html_d5a2d312fa4a438bbca6ee182dee7bba" style="width: 100.0%; height: 100.0%;">St.Thomas_MOre_School</div>`)[0];
+            popup_c29684491492472aaf84fac363455c3f.setContent(html_d5a2d312fa4a438bbca6ee182dee7bba);
+        
+
+        marker_b57b40891a974b94893b8feced5e4128.bindPopup(popup_c29684491492472aaf84fac363455c3f)
+        ;
+
+        
+    
+    
+            var marker_fb50e8e26b0645a59575b3dd410f55d7 = L.marker(
+                [52.4624, -1.7985],
+                {}
+            ).addTo(map_9d14addf281e4fff96d30a9adb29ff28);
+        
+    
+        var popup_a78e65687f394cd2a5a4954a53016722 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89bc9c553fd94b678f44c0f96e0c050b = $(`<div id="html_89bc9c553fd94b678f44c0f96e0c050b" style="width: 100.0%; height: 100.0%;">Home</div>`)[0];
+            popup_a78e65687f394cd2a5a4954a53016722.setContent(html_89bc9c553fd94b678f44c0f96e0c050b);
+        
+
+        marker_fb50e8e26b0645a59575b3dd410f55d7.bindPopup(popup_a78e65687f394cd2a5a4954a53016722)
+        ;
+
+        
+    
+    
+            var marker_08a5d8e77e87459d8e6d3b2d84b6e7f5 = L.marker(
+                [52.4607, -1.803],
+                {}
+            ).addTo(map_9d14addf281e4fff96d30a9adb29ff28);
+        
+    
+        var popup_c86edbdc0711417b801c2c8e797e067c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f802fa46fc346419a310e381e3f3e65 = $(`<div id="html_6f802fa46fc346419a310e381e3f3e65" style="width: 100.0%; height: 100.0%;">Bus_stop</div>`)[0];
+            popup_c86edbdc0711417b801c2c8e797e067c.setContent(html_6f802fa46fc346419a310e381e3f3e65);
+        
+
+        marker_08a5d8e77e87459d8e6d3b2d84b6e7f5.bindPopup(popup_c86edbdc0711417b801c2c8e797e067c)
+        ;
+
+        
+    
+    
+            var marker_1cce56b5bd684d308abb8e73707c9c88 = L.marker(
+                [52.4564, -1.783],
+                {}
+            ).addTo(map_9d14addf281e4fff96d30a9adb29ff28);
+        
+    
+        var popup_f51565ebbcb8430f8512700760601b4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bccad87f6bd545059c25239ff88cdafe = $(`<div id="html_bccad87f6bd545059c25239ff88cdafe" style="width: 100.0%; height: 100.0%;">St.Thomas_MOre_School</div>`)[0];
+            popup_f51565ebbcb8430f8512700760601b4c.setContent(html_bccad87f6bd545059c25239ff88cdafe);
+        
+
+        marker_1cce56b5bd684d308abb8e73707c9c88.bindPopup(popup_f51565ebbcb8430f8512700760601b4c)
+        ;
+
+        
+    
+    
+            var marker_00c658edb3f14c2eb905816baba21930 = L.marker(
+                [52.4624, -1.7985],
+                {}
+            ).addTo(map_9d14addf281e4fff96d30a9adb29ff28);
+        
+    
+        var popup_9bf16949e9074c7bafcdf1214fbffc52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d08d2116460b4806a8be8e199b3d43cd = $(`<div id="html_d08d2116460b4806a8be8e199b3d43cd" style="width: 100.0%; height: 100.0%;">Home</div>`)[0];
+            popup_9bf16949e9074c7bafcdf1214fbffc52.setContent(html_d08d2116460b4806a8be8e199b3d43cd);
+        
+
+        marker_00c658edb3f14c2eb905816baba21930.bindPopup(popup_9bf16949e9074c7bafcdf1214fbffc52)
+        ;
+
+        
+    
+</script>
